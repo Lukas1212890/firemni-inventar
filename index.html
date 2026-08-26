@@ -1,26 +1,6 @@
-<!doctype html>
-<html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Firemní inventář</title></head><body>
-<script>window.__invChunks=[];</script>
-<script src="chunk01.js"></script>
-<script src="chunk02.js"></script>
-<script src="chunk03.js"></script>
-<script src="chunk04.js"></script>
-<script src="chunk05.js"></script>
-<script src="chunk06.js"></script>
-<script src="chunk07.js"></script>
-<script src="chunk08.js"></script>
-<script src="chunk09.js"></script>
-<script src="chunk10.js"></script>
-<script src="chunk11.js"></script>
-<script src="chunk12.js"></script>
-<script src="chunk13.js"></script>
-<script src="chunk14.js"></script>
-<script src="chunk15.js"></script>
-<script src="chunk16.js"></script>
-<script>
-const html=atob(window.__invChunks.join(''));
-const bytes=Uint8Array.from(html,c=>c.charCodeAt(0));
-const text=new TextDecoder('utf-8').decode(bytes);
-document.open();document.write(text);document.close();
-</script>
-</body></html>
+<!doctype html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Firemní inventář</title></head><body><div style="font-family:system-ui;padding:24px">Načítám inventář…</div><script>window.__gzChunks=[];</script>
+<script src="gz01.js"></script>
+<script src="gz02.js"></script>
+<script src="gz03.js"></script>
+<script src="gz04.js"></script>
+<script>(async()=>{try{const b64=window.__gzChunks.join('');const bin=atob(b64);const bytes=Uint8Array.from(bin,c=>c.charCodeAt(0));const ds=new DecompressionStream('gzip');const stream=new Blob([bytes]).stream().pipeThrough(ds);const ab=await new Response(stream).arrayBuffer();const text=new TextDecoder('utf-8').decode(ab);document.open();document.write(text);document.close();}catch(e){document.body.innerHTML='<p style="font-family:system-ui;padding:24px">Aplikaci se nepodařilo načíst. Aktualizujte prosím prohlížeč.</p>';console.error(e);}})();</script></body></html>
